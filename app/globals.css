@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #f7f8fb;
+  --surface: #ffffff;
+  --border: #e5e7eb;
+  --text: #111827;
+  --muted: #6b7280;
+}
+
+html,
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-feature-settings: "palt";
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 讓表格、callout 在文章中有舒服的閱讀節奏 */
+.prose-tc h2 {
+  @apply text-2xl font-bold mt-10 mb-4 text-gray-900;
+}
+.prose-tc h3 {
+  @apply text-lg font-semibold mt-6 mb-2 text-gray-800;
+}
+.prose-tc p {
+  @apply text-gray-700 leading-7 my-3;
+}
+.prose-tc ul {
+  @apply list-disc pl-6 my-3 space-y-2 text-gray-700;
+}
+.prose-tc ol {
+  @apply list-decimal pl-6 my-3 space-y-2 text-gray-700;
+}
+.prose-tc table {
+  @apply w-full text-sm border border-gray-200 rounded-lg overflow-hidden my-4;
+}
+.prose-tc thead {
+  @apply bg-brand-50 text-brand-800;
+}
+.prose-tc th,
+.prose-tc td {
+  @apply border border-gray-200 px-3 py-2 align-top;
+}
+.prose-tc tbody tr:nth-child(even) {
+  @apply bg-gray-50;
+}
+
+/* Sidebar scrollbar 美化 */
+.sidebar-scroll::-webkit-scrollbar {
+  width: 6px;
+}
+.sidebar-scroll::-webkit-scrollbar-thumb {
+  background: #d1d5db;
+  border-radius: 3px;
+}
