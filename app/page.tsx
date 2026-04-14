@@ -1,6 +1,12 @@
 import Link from "next/link";
 import { chapters } from "@/lib/chapters";
 
+// 取得建置（部署）時間 — 每次 push 部署時會自動更新
+const BUILD_DATE = new Date();
+const updatedAt = `${BUILD_DATE.getFullYear()} 年 ${
+  BUILD_DATE.getMonth() + 1
+} 月 ${BUILD_DATE.getDate()} 日`;
+
 export default function Home() {
   return (
     <div className="max-w-5xl mx-auto px-6 lg:px-10 py-10">
@@ -47,8 +53,8 @@ export default function Home() {
           </div>
         </div>
         <div className="bg-white border border-gray-200 rounded-lg p-5">
-          <div className="text-xs text-gray-500 mb-1">資料截止日</div>
-          <div className="font-semibold text-gray-900">2025 年 11 月 28 日</div>
+          <div className="text-xs text-gray-500 mb-1">更新日</div>
+          <div className="font-semibold text-gray-900">{updatedAt}</div>
         </div>
         <div className="bg-white border border-gray-200 rounded-lg p-5">
           <div className="text-xs text-gray-500 mb-1">適用對象</div>
