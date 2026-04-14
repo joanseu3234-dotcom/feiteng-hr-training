@@ -89,9 +89,14 @@ export default function Home() {
         </div>
       </section>
 
-      <footer className="mt-16 pt-8 border-t border-gray-200 text-sm text-gray-500 text-center">
-        本手冊依「飛騰-人事系統」資料夾內所有檔案實際內容彙整製作，若有疑問請洽
-        HR 部門。
+      <footer className="mt-16 pt-8 border-t border-gray-200 text-sm text-gray-500 text-center space-y-1">
+        <div>
+          本手冊依「飛騰-人事系統」資料夾內所有檔案實際內容彙整製作，若有疑問請洽
+          HR 部門。
+        </div>
+        <div className="text-xs text-gray-400">
+          © 直效部 · 發行人 Joan
+        </div>
       </footer>
     </div>
   );

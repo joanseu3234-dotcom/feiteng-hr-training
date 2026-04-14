@@ -42,10 +42,12 @@ export default function Sidebar() {
                 主管交接教育訓練
               </div>
             </Link>
-            <div className="mt-3 text-xs text-gray-500">
+            <div className="mt-3 text-xs text-gray-500 leading-5">
               適用系統：飛騰雲端 IPCC
               <br />
               資料截止：2025-11-28
+              <br />
+              發行人：Joan（直效部）
             </div>
           </div>
 
@@ -92,8 +94,12 @@ export default function Sidebar() {
             </ul>
           </nav>
 
-          <div className="px-5 py-4 border-t border-gray-100 text-xs text-gray-500">
+          <div className="px-5 py-4 border-t border-gray-100 text-xs text-gray-500 leading-5">
             若有疑問請洽 HR 部門
+            <br />
+            <span className="text-gray-400">
+              © 直效部 · 發行人 Joan
+            </span>
           </div>
         </div>
       </aside>
