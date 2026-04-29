@@ -844,6 +844,50 @@ export const chapters: Chapter[] = [
           },
         ],
       },
+      {
+        id: "6-4",
+        heading: "6.4 新人未滿月的班表導入 SOP",
+        source: "新人未滿月的班表導入.docx（2026-04-29）",
+        blocks: [
+          {
+            type: "callout",
+            variant: "important",
+            title: "處理原則",
+            text: "新人破月入職，若導入班表時出現異常訊號，由總部 HR 在後台特案處理，完成後通知單位 BU。",
+          },
+          {
+            type: "heading",
+            level: 3,
+            text: "BU 端配合事項",
+          },
+          {
+            type: "paragraph",
+            text: "若 BU 端遇到上述狀況，需備齊以下資料提供總部 HR 處理：",
+          },
+          {
+            type: "list",
+            ordered: true,
+            items: [
+              "導入班表後異常情況的截圖",
+              "新人入職當月的實際排班表（HR 才可以看出每天是什麼班別、什麼休息日）",
+            ],
+          },
+          {
+            type: "callout",
+            variant: "tip",
+            title: "操作提醒",
+            text: "完整截圖範例與後台特案處理畫面，請參考下方附件文件。",
+          },
+        ],
+        attachments: [
+          {
+            filename: "新人未滿月的班表導入.docx",
+            displayName: "新人未滿月的班表導入 SOP",
+            description: "新人破月入職班表異常處理流程與截圖範例",
+            type: "docx",
+          },
+        ],
+      },
     ],
   },
 
