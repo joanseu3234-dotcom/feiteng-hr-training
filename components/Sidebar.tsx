@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { chapters } from "@/lib/chapters";
+import SearchDialog from "./SearchDialog";
 
 export default function Sidebar() {
   const pathname = usePathname();
@@ -51,7 +52,12 @@ export default function Sidebar() {
             </div>
           </div>
 
-          <nav className="px-3 py-4">
+          {/* 搜尋 */}
+          <div className="px-3 pt-4 pb-2">
+            <SearchDialog />
+          </div>
+
+          <nav className="px-3 py-2">
             <Link
               href="/"
               onClick={() => setOpen(false)}
