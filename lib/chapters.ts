@@ -846,14 +846,14 @@ export const chapters: Chapter[] = [
       },
       {
         id: "6-4",
-        heading: "6.4 新人未滿月的班表導入 SOP",
-        source: "新人未滿月的班表導入.docx（2026-04-29）",
+        heading: "6.4 新人未滿月排班表導入 SOP",
+        source: "新人未滿月排班表.docx",
         blocks: [
           {
             type: "callout",
             variant: "important",
             title: "處理原則",
-            text: "新人破月入職，若導入班表時出現異常訊號，由總部 HR 在後台特案處理，完成後通知單位 BU。",
+            text: "新人破月入職，若導入班表有異常訊號，就由總部 HR 在後台特案處理，完成後通知單位 BU。",
           },
           {
             type: "heading",
@@ -862,7 +862,7 @@ export const chapters: Chapter[] = [
           },
           {
             type: "paragraph",
-            text: "若 BU 端遇到上述狀況，需備齊以下資料提供總部 HR 處理：",
+            text: "BU 如果遇到上述狀況需要做以下事項：",
           },
           {
             type: "list",
@@ -873,17 +873,34 @@ export const chapters: Chapter[] = [
             ],
           },
           {
+            type: "heading",
+            level: 3,
+            text: "國定假日補還處理",
+          },
+          {
+            type: "paragraph",
+            text: "因為是挪移國定假日，如果新人入職我們計算後，確認有要還國定假日，那一天要補給他的國定假日處理方式如下：",
+          },
+          {
+            type: "list",
+            ordered: false,
+            items: [
+              "班表導入後進入飛騰後台【出勤資料維護作業】",
+              "在該日的備註欄寫上「補 X 月的國定假日」",
+            ],
+          },
+          {
             type: "callout",
-            variant: "tip",
-            title: "操作提醒",
-            text: "完整截圖範例與後台特案處理畫面，請參考下方附件文件。",
+            variant: "info",
+            title: "空班代碼參考",
+            text: ";H3 = 非法定休息日（詳見第四章 4.6 假別與空班代碼）",
           },
         ],
         attachments: [
           {
-            filename: "新人未滿月的班表導入.docx",
-            displayName: "新人未滿月的班表導入 SOP",
-            description: "新人破月入職班表異常處理流程與截圖範例",
+            filename: "新人未滿月排班表.docx",
+            displayName: "新人未滿月排班表 SOP",
+            description: "新人破月入職班表導入流程、國定假日處理與截圖範例",
             type: "docx",
           },
         ],
