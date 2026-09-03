@@ -685,7 +685,7 @@ export const chapters: Chapter[] = [
       {
         id: "5-2",
         heading: "5.2 下載薪資報表",
-        source: "人事系統 下載薪資報表.docx（2025-12-12）",
+        source: "人事系統 下載薪資報表.docx（2026-09-03 更新）",
         blocks: [
           {
             type: "list",
@@ -693,14 +693,27 @@ export const chapters: Chapter[] = [
             items: [
               "路徑：圖形選單 / 作業流程 / 每月薪資計算作業 / 薪資清冊 / 條件篩選",
               "列印選擇：【(顯榮) 員工多月份薪資清冊】",
+              "篩選條件：只需篩選【部門區間】，不需篩選【申報公司區間】",
               "設定月份區間後下載",
             ],
+          },
+          {
+            type: "callout",
+            variant: "important",
+            title: "2026/9/3 更新：跨公司員工的篩選方式",
+            text: "員工歸屬於二家公司時，在【薪資清冊】操作篩選時不需要篩選【申報公司區間】，只要篩選【部門區間】即可，顯榮及東州的員工薪資都可同時產出。",
           },
         ],
         attachments: [
           {
+            filename: "5.2-人事系統 下載薪資報表(0903更新).docx",
+            displayName: "下載薪資報表 SOP（0903 更新）",
+            description: "2026/9/3 更新：跨公司員工薪資清冊篩選方式",
+            type: "docx",
+          },
+          {
             filename: "5.2-人事系統 下載薪資報表.docx",
-            displayName: "下載薪資報表 SOP",
+            displayName: "下載薪資報表 SOP（原始版本）",
             type: "docx",
           },
         ],
@@ -1205,7 +1218,7 @@ export const chapters: Chapter[] = [
               [
                 "下載薪資報表",
                 "圖形選單 / 作業流程 / 每月薪資計算作業 / 薪資清冊",
-                "選 (顯榮) 多月份清冊",
+                "選 (顯榮) 多月份清冊；只篩部門區間",
               ],
               [
                 "發送薪資條",
