@@ -12,6 +12,7 @@ const typeMeta: Record<
     icon: "📽️",
     color: "bg-orange-100 text-orange-700",
   },
+  image: { label: "圖片", icon: "🖼️", color: "bg-amber-100 text-amber-700" },
   video: { label: "影片", icon: "🎬", color: "bg-purple-100 text-purple-700" },
   link: { label: "連結", icon: "🔗", color: "bg-gray-100 text-gray-700" },
 };

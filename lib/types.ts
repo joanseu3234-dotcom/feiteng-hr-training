@@ -9,13 +9,15 @@ export type Block =
       title?: string;
       text: string;
     }
-  | { type: "code"; text: string };
+  | { type: "code"; text: string }
+  | { type: "image"; src: string; alt: string; caption?: string };
 
 export type AttachmentType =
   | "pdf"
   | "docx"
   | "xlsx"
   | "pptx"
+  | "image"
   | "video"
   | "link";
 

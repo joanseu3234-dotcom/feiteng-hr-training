@@ -38,6 +38,9 @@ function buildIndex(): SearchEntry[] {
           case "callout":
             texts.push(b.title ?? "", b.text);
             break;
+          case "image":
+            texts.push(b.alt, b.caption ?? "");
+            break;
         }
       }
       entries.push({

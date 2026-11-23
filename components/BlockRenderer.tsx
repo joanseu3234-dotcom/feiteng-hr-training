@@ -77,6 +77,30 @@ export default function BlockRenderer({ blocks }: { blocks: Block[] }) {
               </pre>
             );
 
+          case "image":
+            return (
+              <figure key={i} className="my-4">
+                <a
+                  href={`/files/${encodeURIComponent(block.src)}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src={`/files/${encodeURIComponent(block.src)}`}
+                    alt={block.alt}
+                    className="w-full max-w-xl rounded-lg border border-gray-200"
+                    loading="lazy"
+                  />
+                </a>
+                {block.caption && (
+                  <figcaption className="text-sm text-gray-500 mt-2">
+                    {block.caption}
+                  </figcaption>
+                )}
+              </figure>
+            );
+
           default:
             return null;
         }
